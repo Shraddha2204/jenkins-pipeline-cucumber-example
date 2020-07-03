@@ -8,7 +8,7 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven_3_5_0') {
+                withMaven(maven: 'apache_maven_3.3.3') {
                     sh 'mvn clean install'
 
                 }
@@ -19,7 +19,7 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven_3_5_0') {
+                withMaven(maven: 'apache_maven_3.3.3') {
                     sh 'mvn test'
 
                 }
